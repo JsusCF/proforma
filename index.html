@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proforma</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript">
+        function sumar() {
+            var total = 0;
+            $(".monto").each(function() {
+            if (isNaN(parseFloat($(this).val()))) {
+                total += 0;
+            } else {
+                total += parseFloat($(this).val());
+            }
+            });
+            //alert(total);
+            document.getElementById('spTotal').innerHTML = total;
+            }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Venta de componentes</h1>
+        <h2>Escriba el precio del producto que desee comprar</h2>
+    </header>
+    <section>
+        <h3>Monitores</h3>
+        <div class="seccion">
+            <img src="img/mon1.jpg">
+            <div class="producto">
+                <p>Monitor Samsung 22" LED<br>1920x1080 IPS, HDMI / VGA</p>
+                <p>S/. 565.00</p>
+                <input type="text" id="txt_campo_1" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+        <div class="seccion">
+            <img src="img/mon2.jpg">
+            <div class="producto">
+                <p>Monitor Curvo Gamer MSI OPTIX <br> G241VC 1920x1080 FHD, 75Hz
+                </p>
+                <p>S/. 680.00</p>
+                <input type="text" id="txt_campo_2" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+        <div class="seccion">
+            <img src="img/mon3.jpg">
+            <div class="producto">
+                <p>Monitor HP E22 G4, 21.5" IPS<br>1920x1080 FHD, 60Hz</p>
+                <p>S/. 830.00</p>
+                <input type="text" id="txt_campo_3" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3>Procesadores</h3>
+        <div class="seccion">
+            <img src="img/proce3.jpg" alt="">
+            <div class="producto">
+                <p>PROCESADOR AMD RYZEN 5</p>
+                <p>S/. 893.00</p>
+                <input type="text" id="txt_campo_4" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+        <div class="seccion">
+            <img src="img/proce2.jpg">
+            <div class="producto">
+                <p>PROCESADOR INTEL I9</p>
+                <p>S/. 2 236.20</p>
+                <input type="text" id="txt_campo_5" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+        <div class="seccion">
+            <img src="img/proce1.jpg" alt="">
+            <div class="producto">
+                <p>PROCESADOR AMD RYZEN 9</p>
+                <p>S/. 3 147.00</p>
+                <input type="text" id="txt_campo_6" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3>Placas Madre </h3>
+        <div class="seccion">
+            <img src="img/placa1.jpg" alt="">
+            <div class="producto">
+                <p>PLACA INTEL ASROCK Z590 <br>PG VELOCITA DDR4 LGA 1200</p>
+                <p>S/. 1 311.00</p>
+                <input type="text" id="txt_campo_7" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+        <div class="seccion">
+            <img src="img/placa2.jpg" alt="">
+            <div class="producto">
+                <p>PLACA AMD GIGABYTE B550<br>AORUS MASTER GAMING DDR4</p>
+                <p>S/. 1 558.00</p>
+                <input type="text" id="txt_campo_8" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+        <div class="seccion">
+            <img src="img/placa3.jpg" alt="">
+            <div class="producto">
+                <p>PLACA AMD MSI A320M-A<br>PRO MAX DDR4 AM4</p>
+                <p>S/. 509.00</p>
+                <input type="text" id="txt_campo_9" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3>Cases</h3>
+        <div class="seccion">
+            <img src="img/case1.jpg" alt="">
+            <div class="producto">
+                <p>CASE 500W ANTRYX <br>RX-320 BLACK</p>
+                <p>S/. 437.00</p>
+                <input type="text" id="txt_campo_10" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+        <div class="seccion">
+            <img src="img/case2.jpg" alt="">
+            <div class="producto">
+                <p>CASE COOLER MASTER <br> MASTERBOX CM694</p>
+                <p>S/. 638.40</p>
+                <input type="text" id="txt_campo_11" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+        <div class="seccion">
+            <img src="img/case3.jpg" alt="">
+            <div class="producto">
+                <p>CASE 350W HALION SLIM<br>SUPRA S601B BLACK</p>
+                <p>S/. 255.80</p>
+                <input type="text" id="txt_campo_12" class="monto" onkeyup="sumar();" />
+            </div>
+        </div>
+    </section>
+    <section>
+        <span>El total de su compra es: </span> <span id="spTotal"></span>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+</html>

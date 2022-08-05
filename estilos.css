@@ -1,0 +1,33 @@
+body{
+    background-color: paleturquoise;
+}
+
+header{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+h3{
+    font-size: 35px;
+}
+
+.seccion{
+    display: flex;
+    margin: 15px;
+}
+
+.producto{
+    text-align: center;
+    font-size: 21px;
+    padding-left: 25px;
+    padding-top: 80px;
+}
+
+input{
+    font-size: 20px;
+}
+
+span{
+    font-size: 35px;
+}
